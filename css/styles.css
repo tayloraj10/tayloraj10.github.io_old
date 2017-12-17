@@ -1,0 +1,329 @@
+/* Whole Page Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #6699ff;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+content {
+    min-height: 100%;
+    height: auto;
+}
+
+a {
+    color: white;
+}
+
+/* Header Styles */
+.header-links-list {
+    margin-top: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    color: white;
+}
+
+.header-link {
+    float: right;
+    display: inline-block;
+    padding: 21px 22px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+#home {
+    color: white;
+    display: block;
+    float: left;
+    padding: 20px 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#home, a {
+    text-decoration: none;
+}
+
+/* Body Styles */
+.main {
+    text-align: center;
+    overflow: hidden;
+    flex: 1;
+    width: 700px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.main-gportfolio {
+    text-align: center;
+    overflow: hidden;
+    flex: 1;
+    width: 90%;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* Text Styles */
+.text {
+    margin: auto;
+    background: #d8d8d8;
+    padding: 5px 15px;
+    text-align: left;
+    padding: 10px 25px;
+}
+
+.header {
+    margin: 5px auto;
+    text-align: left;
+}
+
+.text-link {
+    color: #5186ef;
+}
+
+/* Form Styles */
+.contact-form {
+    background: #f2f2f2;
+    margin: auto;
+    padding: 5px 15px;
+    margin-bottom: 0px;
+}
+
+form {
+    overflow: visible;
+}
+
+form p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.header a {
+    color: #5186ef;
+}
+
+/* Iframe Style */
+.resume-frame {
+    margin-bottom: 0px;
+    display: block;
+}
+
+/* GIS Portfolio Styles */
+
+.portfolio {
+    margin: auto;
+    background: #d8d8d8;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+#sectionNav {
+    margin: auto;
+    display: table;
+}
+
+#sectionNav p {
+    margin: 15px;
+    text-align: center;
+    padding: 0px 10px;
+    display: table-cell;
+    position: static;
+    border-right: .5px solid black;
+    border-left: .5px solid black;
+    vertical-align: middle;
+}
+
+#sectionNav p:first-of-type {
+    border: none;
+    border-right: 1px solid black;
+}
+
+#sectionNav p:last-of-type {
+    border: none;
+    border-left: 1px solid black;
+}
+
+#sectionNav p a {
+    color: #5186ef;
+}
+
+.section-seperator {
+    margin-top: 15px;
+    background: black;
+    height: .5px;
+   
+}
+
+.sectionTitle {
+    font-size: 30px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    padding: 10px;
+    max-width: 100%;
+}
+
+figure h2 {
+    margin-top: 0px;
+}
+
+figure img {
+    display: block;
+    max-width: inherit;
+    max-height: inherit;
+    width: auto;
+    height: auto;
+}
+
+/* Footer Styles */
+.footer {
+    margin: auto;
+    background: black;
+    margin-top: 0px;
+    height: 75px;
+    
+}
+
+.social-media-list {
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-right: 45px;
+}
+
+
+.social-media-list-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px;
+}
+
+.social-media-image {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+ .team-treehouse {
+
+    h1, h2 {
+      text-align: center;
+    }
+    h2 {
+      font-weight: normal;
+    }
+  }
+}
+
+
+// pie chart
+.pieChart {
+  width: $size-circle + 13em;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+// pie
+.pie {
+  height: $size-circle;
+  width: $size-circle;
+  position: relative;
+  float:left;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: $size-inner;
+    height: $size-inner;
+    background: $color-background;
+    border-radius: 50%;
+    top: $size-thickness;
+    left: $size-thickness;
+  }
+}
+
+.slice {
+  position: absolute;
+  width: $size-circle;
+  height: $size-circle;
+  clip: rect(0px, $size-circle, $size-circle, $size-circle/2);
+  animation: bake-pie 1s;
+
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background-color: black;
+    width: $size-circle;
+    height: $size-circle;
+    border-radius: 50%;
+    clip: rect(0px, $size-circle, $size-circle, $size-circle/2);
+  }
+}
+
+// legend
+.legend {
+  width: 13em;
+  padding-left: 1em;
+  float:left;
+  
+  ul {
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 0.8em;
+  }
+  li {
+    height: 1.25em;
+    margin-bottom: 0.7em;
+    padding-left: 0.5em;
+    border-left: 1.25em solid black;
+  }
+  em {
+    font-style: normal;
+  }
+  span {
+    float: right;
+    font-weight: bold;
+  }
+}
